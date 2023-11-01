@@ -1,0 +1,80 @@
+/* 
+No line breaks or paragraphs should be used. Use positioning, floats, and clears as appropriate.
+Each colored box as a 1 pixel border.
+The content area of each box is 50 pixels wide by 50 pixels high.
+The overall size of each box is 72 pixels wide by 72 pixels high.
+There is 50 pixels of space between the header and the boxes.
+There is 50 pixels of space between the boxes themselves.
+The Codeup arrow has been added to each box (download image below).
+ */
+.title {
+    color: #7f00ff;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.box {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 50px;
+    float: left;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.box>img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+.box:nth-child(3), .box:nth-child(5) {
+    clear: left;
+}
+#red {
+    background-color: red;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+}
+#orange {
+    background-color: orange;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+}
+#yellow {
+    background-color: yellow;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+}
+#green {
+    background-color: green;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+    /* clear: left; */
+
+}
+#blue {
+    background-color: blue;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+
+}
+#violet {
+    background-color: violet;
+    /* width: 50px;
+    height: 50px; */
+    /* float: left;
+    margin-inline: 25px 25px; */
+}

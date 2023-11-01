@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First  HTML Form</title>
+</head>
+<body>
+    <h2>User Login</h2>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <!-- <div>
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="username">
+        </div> -->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password">
+        </div>
+        <div>
+            <button type="submit" name="submit">Login</button>
+        </div>
+    </form>
+    <br>
+    <h2>Compose an Email</h2>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+        <div>
+            <label for="email_to"> To: </label>
+            <input id="email_to" type="text" name="email_to" value="" placeholder="Email">
+        </div>
+        <div>
+            <label for="email_from"> From: </label>
+            <input id="email_from" type="text" name="email_from" value="" placeholder="Your Email">
+        </div>
+        <div>
+            <label for="email_subject"> Subject: </label>
+            <input id="email_subject" type="text" name="email_subject" value="" placeholder="Subject">
+        </div>
+        <div>
+            <textarea id="email_body" rows="2" cols="20">Content here</textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="sent_folder" name="sent_folder" checked>
+            <label for="sent_folder">Save to my Sent Folder</label>
+        </div>
+        <div>
+            <button type="submit" name="submit">Send</button>
+        </div>
+    </form>
+    <br>
+    <h2>Multiple Choice Test</h2>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+       <ol>
+        <li>What is 9 + 10?</li>
+        <label><input type="radio" name="q1" value="21"> 21 </label>
+        <label><input type="radio" name="q1" value="20"> 20 </label>
+        <label><input type="radio" name="q1" value="19"> 19 </label>
+        <label><input type="radio" name="q1" value="10"> 10 </label>
+        <li>What is life</li>
+        <label><input type="radio" name="q2" value="This"> This </label>
+        <label><input type="radio" name="q2" value="That"> That </label>
+        <label><input type="radio" name="q2" value="DOG"> DOG </label>
+        <label><input type="radio" name="q2" value="CAT"> CAT </label>
+       </ol>
+       <div>
+        <button type="submit" name="submit">Submit Answers</button>
+       </div>
+    </form>
+    <br>
+    <h2>Select Testing</h2>
+    <form method="POST" action="http://request-inspector.glitch.me/">
+       <label for="s1">Do you live on earth?</label>
+        <select id="s1" name="ans[]" multiple>
+            <option value="1" selected>YES</option>
+            <option value="0">NO</option>
+        </select>
+        <div>
+            <button type="submit" name="submit">Submit</button>
+           </div>
+    </form>
+</body>
+</html>
